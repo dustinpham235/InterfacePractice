@@ -29,12 +29,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // if (Input.GetKeyDown(KeyCode.Alpha1))
-        // {
-        //     InventoryManager.instance.addItem(items[0]);
-        //     print(items[0].ItemName);
-        //     _currentWeapon = Instantiate<GameObject>(items[0].ActionableItem, transform.position, Quaternion.identity).GetComponent<IWeapons>();
-        // }
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -44,11 +38,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             InventoryManager.instance.addItem(_weaponsLists[2]);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            InventoryManager.instance.removeItem();
         }
 
         if (Input.GetMouseButtonDown(0))

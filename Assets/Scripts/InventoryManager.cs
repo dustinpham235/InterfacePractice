@@ -70,8 +70,8 @@ public class InventoryManager : MonoBehaviour
 
     public GameObject removeItem()
     {
-        // if (itemToRemove == null)
-        //     return null;
+        if (playerInventory.Count <=1)
+            return null;
 
         playerInventory.Pop();
         _currentWeaponClone.SetActive(false);
